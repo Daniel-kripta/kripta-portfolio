@@ -1,0 +1,13 @@
+.bgNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    padding: 10px;
+    color: var(--color-ligth);
+    margin-bottom: 20px;
+}
+
+.logoNavbar{
+    height: 80px;
+}

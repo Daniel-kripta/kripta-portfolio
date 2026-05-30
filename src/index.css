@@ -1,0 +1,46 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-coorp: #478478;
+    --color-ligth: #daf4ef;
+    --color-text: #010f0c;
+}
+
+@font-face {
+    font-family: 'GoogleSansCode';
+    src: url('./assets/fonts/Google_Sans_Code/static/GoogleSansCode-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'GoogleSansCode';
+    src: url('./assets/fonts/Google_Sans_Code/static/GoogleSansCode-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'GoogleSansCode';
+    src: url('./assets/fonts/Google_Sans_Code/static/GoogleSansCode-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'GoogleSansCode', sans-serif;
+    background: var(--color-coorp);
+
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    width: 100%;
+    max-width: 1000px;
+}
