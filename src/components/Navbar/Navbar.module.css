@@ -1,13 +1,19 @@
 .bgNavbar {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     height: 100px;
     padding: 10px;
+    padding-top: 20px;
     color: var(--color-ligth);
     margin-bottom: 20px;
 }
 
+div:has(.logoNavbar){
+    height: 50px;
+    width: auto;
+}
+
 .logoNavbar{
-    height: 80px;
+    height: 50px;
 }
