@@ -1,5 +1,5 @@
 export default function Menu() {
     return (
-        <div style={{fontSize: "90px", userSelect: "none"}}>≡</div>
+        <div style={{fontSize: "90px", paddingBottom: "15px", userSelect: "none"}}>≡</div>
     )
 }

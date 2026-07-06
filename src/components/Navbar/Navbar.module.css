@@ -1,4 +1,8 @@
 .bgNavbar {
+    position: sticky;
+    z-index: 1000;
+    background-color: var(--color-coorp);
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,10 +14,11 @@
 }
 
 div:has(.logoNavbar){
-    height: 50px;
+    height: 60px;
     width: auto;
 }
 
 .logoNavbar{
     height: 50px;
+    margin-bottom: 20px;
 }

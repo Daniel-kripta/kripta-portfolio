@@ -1,0 +1,24 @@
+.about{
+    display: flex;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+}
+
+.about article{
+    text-align: justify;
+}
+
+.about h3{
+    background-color: var(--color-ligth);
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.about p{
+    padding: 10px;
+}
