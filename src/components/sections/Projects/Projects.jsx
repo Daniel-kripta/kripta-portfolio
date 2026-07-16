@@ -5,6 +5,12 @@ import data from "../../../data/projects.js"
 export default function Projects({type}){
 
     const projects = data[type]
+    function techList(items) {
+    return items.map((tech) => (
+        <li key={tech.name}><img className={styles.techImg} src={tech.img} alt={tech.name} /></li>
+        ))
+    }
+
 
     return(
         <section id="proyectos" className={styles.projectSection}>
@@ -15,13 +21,12 @@ export default function Projects({type}){
                         <img src={project.screenshot} className={styles.screenshot} alt={project.name} />
                         <p>{project.description}</p>
                     </div>
-                    <div>     
-                        <span>Stack tecnológico</span>               
-                        <ul>
-                            {project.stack.map((tech, i) => (
-                                <li key={tech}><img className={styles.techImg} src={project.stackImg[i]} alt={tech} />  </li>
-                            ))}
-                        </ul>
+                    <div className={styles.stackTech}>
+                        <h4>Frameworks</h4>
+                        <ul>{techList(project.stack.filter(t => t.type === "framework"))}</ul>
+
+                        <h4>Lenguajes</h4>
+                        <ul>{techList(project.stack.filter(t => t.type === "language"))}</ul>
                     </div>
                 </div>
             ))}

@@ -28,8 +28,16 @@
     text-align: justify;
 }
 
-.projectCard ul{
+.stackTech {
     background-color: var(--color-text);
+    color: var(--color-coorp-ligth);
+    font-size: 3.5cqw;
+    text-align: center;
+    text-decoration:underline;
+    padding-top: 5px;
+}
+
+.projectCard ul{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
