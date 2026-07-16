@@ -6,8 +6,9 @@
 
 :root{
     --color-coorp: #478478;
+    --color-coorp-ligth: #759e95;
     --color-ligth: #daf4ef;
-    --color-text: #010f0c;
+    --color-text: #042c22;
 }
 
 @font-face {
@@ -29,12 +30,23 @@
 }
 
 body{
+    color: var(--color-text);
     width: 100%;
     display: flex;
     justify-content: center;
     font-family: 'GoogleSansCode', sans-serif;
     background: var(--color-coorp);
+}
 
+h3{
+    background-color: var(--color-ligth);
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+p{
+    font-size: 1.1rem;
 }
 
 #root{
