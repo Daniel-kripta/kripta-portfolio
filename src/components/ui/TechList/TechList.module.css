@@ -1,7 +1,9 @@
 .techList{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--color-coorp-ligth);
+    padding-bottom: 5px;
 }
 
 .techListTitle{
@@ -19,13 +21,13 @@
 }
 
 .techImg{
-    width: 20cqw;
+    max-width: 20cqw;
     max-height: 8cqw;
     object-fit:contain;
 }
 
 .subtype{
-    margin-right: 2px;
+    margin-right: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: var(--color-coorp-ligth);

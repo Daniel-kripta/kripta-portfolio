@@ -34,8 +34,10 @@ export default function Projects({ type }) {
           <div className={styles.stackTech}>
 
             <TechList project={project} type={"framework"} />
-            <TechList project={project} type={"language"} />
-            <TechList project={project} type={"resource"} />
+            <TechList project={project} type={"lenguaje"} />
+            <TechList project={project} type={"base de datos"} />
+            <TechList project={project} type={"recurso"} />
+            <TechList project={project} type={"otros"} />
             
           </div>
         </div>
