@@ -1,13 +1,9 @@
 function urlImg(projectImg) {
-    return(
-        `./src/assets/images/${projectImg}_screenshot.png`            
-    )        
+    return `/images/${projectImg}_screenshot.png`
 }
 
 function techImg(tech) {
-    return(
-        `./src/assets/logos/${tech}.png`            
-    )
+    return `/logos/${tech}.png`
 }
 
 const data = {
