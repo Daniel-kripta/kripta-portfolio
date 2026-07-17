@@ -1,8 +1,11 @@
 import styles from "./Projects.module.css";
 import data from "../../../data/projects.js";
+import TechList from "../../ui/TechList/TechList.jsx";
 
 export default function Projects({ type }) {
   const projects = data[type];
+
+
   function techList(items) {
     return items.map((tech) =>
       tech.img !== undefined ? (
@@ -29,20 +32,11 @@ export default function Projects({ type }) {
             <p>{project.description}</p>
           </div>
           <div className={styles.stackTech}>
-            <h4>Frameworks</h4>
-            <ul>
-              {techList(project.stack.filter((t) => t.type === "framework"))}
-            </ul>
 
-            <h4>Lenguajes</h4>
-            <ul>
-              {techList(project.stack.filter((t) => t.type === "language"))}
-            </ul>
-
-            <h4>Recursos</h4>
-            <ul>
-              {techList(project.stack.filter((t) => t.type === "resource"))}
-            </ul>
+            <TechList project={project} type={"framework"} />
+            <TechList project={project} type={"language"} />
+            <TechList project={project} type={"resource"} />
+            
           </div>
         </div>
       ))}
