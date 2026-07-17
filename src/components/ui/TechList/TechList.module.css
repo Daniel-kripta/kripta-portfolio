@@ -4,7 +4,7 @@
     flex-wrap: wrap
 }
 
-.techList h4{
+.techListTitle{
     text-transform: capitalize;
 }
 
@@ -20,5 +20,17 @@
 
 .techImg{
     width: 20cqw;
+    max-height: 8cqw;
     object-fit:contain;
+}
+
+.subtype{
+    margin-right: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--color-coorp-ligth);
+}
+
+.subtype::after{
+    content: ": ";
 }
