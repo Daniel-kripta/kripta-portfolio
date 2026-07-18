@@ -49,6 +49,12 @@ p{
     font-size: 1.1rem;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit
+}
+
 #root{
     display: flex;
     flex-direction: column;

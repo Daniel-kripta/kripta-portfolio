@@ -28,7 +28,10 @@ const data = {
         ],
         id: "project-1",
         screenshot: urlImg("quedamos"),
-        repo: "www"
+        url: [
+            {name: "GitHub", description: "Repositorio de GitHub", url: "https://github.com/Daniel-kripta/quedamos-org" },
+            {name: "Demo", description: "Enlace a la web desplegada", url: "https://quedamos-org.vercel.app/"}
+        ]
         },
         {name: "Sansofé",
         description: "Web app para consulta e investigación de prensa histórica canaria, con búsqueda de texto completo y asistente RAG. MVP desarrollado como proyecto final del bootcamp Full Stack + IA de Ironhack (junio 2026). Stack: Node.js + Fastify + Prisma, React 18 + Vite, Python + FastAPI, PostgreSQL + pgvector, Docker Compose, N8N y agente LangGraph con búsqueda semántica vía Vertex AI.",
@@ -52,7 +55,10 @@ const data = {
         ],
         id: "project-2",
         screenshot: urlImg("sansofe"),
-        repo: "www"
+        url: [
+            {name: "GitHub", description: "Repositorio de GitHub", url: "https://github.com/Daniel-kripta/quedamos-org" },
+            {name: "Demo", description: "Enlace a la web desplegada", url: "https://quedamos-org.vercel.app/"}
+        ]
         },
         {name: "Nutridayly",
         description: "SPA en React para explorar alimentos, analizar propiedades nutricionales y construir platos personalizados. Permite buscar alimentos con filtrado por categoría y nutrientes, guardar favoritos, y crear platos en NutriCalc combinando alimentos guardados y calculando su composición nutricional normalizada por 100g. Datos de la USDA.",
@@ -72,7 +78,9 @@ const data = {
         ],
         id: "project-3",
         screenshot: urlImg("nutridayly"),
-        repo: "www"
+        url: [
+            {name: "GitHub", description: "Repositorio de GitHub", url: "https://github.com/Daniel-kripta/quedamos-org" }
+        ]
         }
     ],
     clientProjects:[

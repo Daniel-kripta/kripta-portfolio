@@ -17,6 +17,30 @@
     gap: 25px;
 }
 
+.projectImg {
+    width: 100%;
+    aspect-ratio: 1.5;
+    position: relative;
+}
+
+.projectLinks{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--color-text);
+    color: var(--color-ligth);
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    gap: 5cqw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
 .screenshot{
     width: 100%;
     aspect-ratio: 1.5;
