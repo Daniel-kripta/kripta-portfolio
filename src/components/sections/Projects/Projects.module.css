@@ -49,7 +49,7 @@
 
 .projectCard p{
     margin: 10px;
-    font-size: 4cqw;
+    font-size: clamp(0.8rem, 4.5cqw, 1.1rem);
     text-align: justify;
 }
 

@@ -1,0 +1,26 @@
+footer{
+    background-color: var(--color-coorp-ligth);
+    border-top: 3px solid var(--color-text);
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logoFooter{
+    height: 80px;
+}
+
+.navFooter{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.navFooter svg{
+    height: 20px;
+}

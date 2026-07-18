@@ -7,12 +7,15 @@
 
 .about article{
     text-align: justify;
+    background-color: var(--color-coorp-ligth);
+
 }
 
 .about p{
     padding: 10px;
     margin-left: 5px;
     margin-right: 5px;
+    font-size: 0.95rem;
 }
 
 @media (min-width: 768px) {

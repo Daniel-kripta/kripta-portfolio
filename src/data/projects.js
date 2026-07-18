@@ -56,8 +56,8 @@ const data = {
         id: "project-2",
         screenshot: urlImg("sansofe"),
         url: [
-            {name: "GitHub", description: "Repositorio de GitHub", url: "https://github.com/Daniel-kripta/quedamos-org" },
-            {name: "Demo", description: "Enlace a la web desplegada", url: "https://quedamos-org.vercel.app/"}
+            {name: "GitHub", description: "Repositorio de GitHub", url: "https://github.com/Daniel-kripta/Proyecto_Final_Full_Stack_-_Sansofe_WebApp" },
+            {name: "Demo", description: "Enlace a la web desplegada", url: "https://sansofe.kripta.dev/"}
         ]
         },
         {name: "Nutridayly",
@@ -79,7 +79,8 @@ const data = {
         id: "project-3",
         screenshot: urlImg("nutridayly"),
         url: [
-            {name: "GitHub", description: "Repositorio de GitHub", url: "https://github.com/Daniel-kripta/quedamos-org" }
+            {name: "GitHub", description: "Repositorio de GitHub", url: "https://github.com/Daniel-kripta/project-react-application" },
+            {name: "Demo", description: "Enlace a la web desplegada", url: "https://daniel-kripta.github.io/project-react-application"}
         ]
         }
     ],

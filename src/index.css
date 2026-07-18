@@ -38,6 +38,10 @@ body{
     background: var(--color-coorp);
 }
 
+h2{
+    text-align: center;
+}
+
 h3{
     background-color: var(--color-ligth);
     margin-bottom: 5px;
