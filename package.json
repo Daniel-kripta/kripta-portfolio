@@ -8,11 +8,14 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "node src/server/index.js"
+    "server": "node src/server/index.js",
+    "seed": "node prisma/seed.js"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "express": "^5.2.1",
+    "pg": "^8.22.0",
     "prisma": "^7.8.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
