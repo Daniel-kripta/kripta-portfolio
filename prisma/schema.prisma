@@ -1,0 +1,36 @@
+datasource db {
+  provider = "postgresql"
+}
+
+model Projects {
+  id            Int       @id @default(autoincrement())
+  order         Int?
+  visible       Boolean   @default(true)
+  name          String
+  type          String
+  description   String
+  status        String
+  version       String
+  screenshot    String
+  stack         Stack[]   
+  urls          Url[]
+}
+
+model Stack {
+  id            Int       @id @default(autoincrement())
+  name          String
+  type          String
+  subtype       String?
+  img           String?
+  projectId     Int
+  project       Projects  @relation(fields: [projectId], references: [id])
+}
+
+model Url{
+  id            Int       @id @default(autoincrement())
+  name          String
+  description   String
+  url           String
+  projectId     Int
+  project       Projects  @relation(fields: [projectId], references: [id])
+}
