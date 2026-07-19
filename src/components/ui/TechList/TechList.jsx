@@ -1,4 +1,5 @@
 import styles from "./TechList.module.css"
+import { techImg } from "../../../utils/imgUtils.js"
 
 export default function TechList({project, type}) {
   
@@ -14,7 +15,7 @@ export default function TechList({project, type}) {
           .map((tech) => (
             <li key={tech.name}>
               {tech.img !== undefined
-              ? <>{tech.subtype && <span className={styles.subtype}>{tech.subtype}</span>}<img className={styles.techImg} src={tech.img} alt={tech.name} title={tech.name} /></>
+              ? <>{tech.subtype && <span className={styles.subtype}>{tech.subtype}</span>}<img className={styles.techImg} src={techImg(tech.img)} alt={tech.name} title={tech.name} /></>
               : tech.type === "recurso" || tech.type === "otros"
               ? <><span className={styles.subtype}>{tech.subtype}</span> {tech.name}</>
               : tech.name}

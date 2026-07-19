@@ -1,10 +1,14 @@
 import styles from "./Projects.module.css";
-import data from "../../../data/projects.js";
 import TechList from "../../ui/TechList/TechList.jsx";
 import IconsLink from "../../ui/IconsLink/IconsLink.jsx";
+import { useProjects } from "../../../hooks/useProjects.js";
+import { urlImg, techImg } from "../../../utils/imgUtils.js";
 
 export default function Projects({ type }) {
-  const projects = data[type];
+  const { projects, loading, error } = useProjects(type);
+
+  if (loading) return <p>Cargando...</p>
+  if (error) return <p>Error: {error}</p>
 
 
   function techList(items) {
@@ -27,7 +31,7 @@ export default function Projects({ type }) {
             <h3>{project.name}</h3>
             <div className={styles.projectImg}>
               <img
-                src={project.screenshot}
+                src={urlImg(project.screenshot)}
                 className={styles.screenshot}
                 alt={project.name}
               />
