@@ -14,7 +14,7 @@ export default function TechList({project, type}) {
           .filter((t) => t.type === type)
           .map((tech) => (
             <li key={tech.name}>
-              {tech.img !== undefined
+              {tech.img != null
               ? <>{tech.subtype && <span className={styles.subtype}>{tech.subtype}</span>}<img className={styles.techImg} src={techImg(tech.img)} alt={tech.name} title={tech.name} /></>
               : tech.type === "recurso" || tech.type === "otros"
               ? <><span className={styles.subtype}>{tech.subtype}</span> {tech.name}</>
