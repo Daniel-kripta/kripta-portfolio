@@ -1,7 +1,10 @@
 import pkg from "@prisma/client"
 const { PrismaClient } = pkg
+import "dotenv/config"
 
-const prisma = new PrismaClient()
+const prisma = new PrismaClient({
+    datasourceUrl: process.env.DATABASE_URL
+})
 
 async function main() {
     await prisma.stack.deleteMany()
